@@ -4,7 +4,7 @@ gem 'rails', '3.2.2'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-
+gem "friendly_id", "~> 4.0.1"
 gem 'sqlite3'
 gem 'therubyracer'
 
@@ -24,6 +24,7 @@ gem 'jquery-rails'
 gem 'heroku'
 
 group :production do
+  gem 'pg'
   gem 'thin'
 end
 
