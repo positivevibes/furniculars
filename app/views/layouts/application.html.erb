@@ -7,12 +7,12 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<div id="container">
-<div id="header">
+<div id="headers">
+<div id="container-size">
 <div>
-<div id="logo"><div class="mainl">Callingwood</div><div class="subl">Crafting Ambiance</div></div>
+<div id="logo"><img src="/assets/logo.png" alt="home"/></div>
 <div id="nav">
-<div id="contact_mini"><span>Get in touch?</span> <img src="assets/phone.png" /><img src="assets/mail.png" /></div>
+<div id="contact_mini"><span>Get in touch?</span> <img src="/assets/phone.png" /><img src="/assets/mail.png" /></div>
 <ul class="button-list">
 <li class='button'>about</li>
 <li class='button'>product</li>
@@ -22,14 +22,15 @@
 </div>
 <div id="navcontact"></div>
 </div>
-<div></div>
 </div>
+</div>
+<div id="container">
 <div id="content">
 <%= yield %>
 </div>
-<div id="footer"></div>
-</div>
 
+</div>
+<div id="footer"></div>
 
 </body>
 </html>

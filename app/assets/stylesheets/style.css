@@ -5,20 +5,33 @@ font-family: 'SansationRegular', Arial, sans-serif;
 color:#85050e;
 margin:0;
 padding:0;
+background:#fff;
+	background-image: url("/assets/pwood.jpg");
+background-repeat: repeat;
+}
+#container
+{
+width:1080px;
+margin:auto;
+
 }
 /* Header Section */
-#header
+#headers
 {
-height:90px;
-background:#D4D7FE;
-border-bottom:6px solid #336699;
-color:#272727;
+ border-bottom: 2px dotted #110022;
+    box-shadow: 5px 5px 5px #272727;
+    color: #C79F34;
+    height: 90px;
+}
+#container-size
+{
+width:1080px;
+margin:auto;
 }
 #logo
 {
- left: 7%;
  position: absolute;
- top: 14px;
+ top: 20px;
 }
 #logo .mainl
 {
@@ -32,14 +45,14 @@ font-size:15px;
 /* Navigation Section */
 #nav
 {
-position:absolute;
-top:14px;
-right:8%;
+    float: right;
+    position: relative;
+    top: 14px;
 }
 #contact_mini
 {
 margin-bottom:10px;
-margin-left:124px;
+margin-left:114px;
 }
 #contact_mini img
 {
@@ -96,39 +109,36 @@ margin-right:6px;
 /* Main Section */
 #content
 {
-	background-color: #eee;
+	/*background-color: #eee;*/
 	/*background-image: url("../images/bg.png");*/
 	/*background-repeat: repeat-x;*/
 	height:440px;
+
 }
 /* Coming Soon Page */
 #comingsoon
 {
-width:620px;
+width:510px;
 margin:auto;
 position:relative;
-background: #feffff; /* Old browsers */
-background: -moz-linear-gradient(top, #feffff 0%, #ddf1f9 35%, #a0d8ef 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#feffff), color-stop(35%,#ddf1f9), color-stop(100%,#a0d8ef)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top, #feffff 0%,#ddf1f9 35%,#a0d8ef 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top, #feffff 0%,#ddf1f9 35%,#a0d8ef 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top, #feffff 0%,#ddf1f9 35%,#a0d8ef 100%); /* IE10+ */
-background: linear-gradient(top, #feffff 0%,#ddf1f9 35%,#a0d8ef 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#a0d8ef',GradientType=0 ); /* IE6-9 */
+background: #fff;
 margin-top:100px;
 height:230px;
 text-align:center;
 color:#555;
--moz-box-shadow: 10px 10px 5px #888;
+/*-moz-box-shadow: 10px 10px 5px #888;
 -webkit-box-shadow: 10px 10px 5px #888;
-box-shadow: 10px 10px 5px #888;
+box-shadow: 10px 10px 5px #888;*/
 border:4px solid #ccc;
+border-radius: 6px 6px 6px 6px;
 }
+
+
 #comingsoon h1
 {
 margin-bottom:30px;
 padding-top:14px;
-color:#003366;
+color:#fbb409;
 }
 .lefty
 {
@@ -156,17 +166,446 @@ text-shadow: rgba(0,0,0,0.5) -1px 0, rgba(0,0,0,0.3) 0 -1px, rgba(255,255,255,0.
 }
 .righty
 {
-padding-left:12px;
-border-left: solid #272727 2px;
-margin-left:28%;
-font-size: 17px;
-text-align:left;
 color: #336699;
+    font-size: 17px;
+    margin-left: 7%;
+    margin-right: 6%;
+    padding-left: 12px;
+    text-align: left;
 }
 /* Ends */
 #footer
 {
-height:40px;
-background:#000000;
-border-top:3px solid #ccc;
+height:20px;
+background:#272727;
+border-top:2px dotted #102;
 }
+
+
+.puff {
+	position: absolute;
+	width: 0px;
+	height: 0px;
+}
+
+
+/* ----The Grid Design---- */
+#product-box
+{margin-top:10px;}
+#productbox
+{
+width:760px;
+position:relative;
+margin-left:300px;
+color:#2B96F1;
+}
+#leftbox
+{
+position:relative;
+float:left;
+height: 400px;
+background:#eee;
+width: 270px;
+}
+.pro-individual
+{
+    float: left;
+    margin-left: 15px;
+    margin-right: 15px;
+    position: relative;
+    width:220px;
+    border:solid #ccc 1px;
+    margin-bottom:10px;
+    -moz-border-radius:3px;
+}
+.pro-individual img
+{
+width:210px;
+height:230px;
+margin:5px;
+}
+.pro-individual span
+{
+background:#2B96F1;
+color:#fff;
+padding:3px;
+margin-bottom:3px;
+
+}
+.below-product
+{
+margin-left:5px;
+}
+
+/* slider on product page */
+#slide-box{
+width:710px;
+position:relative;
+height:280px;
+margin:auto;
+margin-bottom:20px;
+
+}
+.slider {
+float:left;
+width:700px;
+height:260px;
+position:relative;
+padding-bottom:26px;
+background:url(/assets/icons/bottom_shadow.png) no-repeat bottom center;
+}
+
+.sliderContent {
+float:left;
+width:700px;
+height:260px;
+clear:both;
+position:relative;
+overflow:hidden;
+}
+
+.sliderArrows a {
+display:block;
+text-indent:-9999px;
+outline:none;
+z-index:50;
+background-image:url(/assets/icons/prev_next.png);
+width:42px;
+height:42px;
+position:absolute;
+top:50%;
+margin-top:-34px;
+}
+
+.prev {
+background-position:0 0;
+left:15px;
+}
+
+.prev:hover {
+background-position:0 -44px;
+}
+
+.next {
+right:15px;
+background-position:-44px 0;
+}
+
+.next:hover {
+background-position:-44px -44px;
+}
+
+.sliderContent .item {
+position:absolute;
+width:700px;
+height:260px;
+background:#fff;
+}
+
+.sliderBullets {
+position:absolute;
+bottom:0;
+left:50%;
+z-index:50;
+margin-left:-45px;
+}
+
+.sliderBullets a {
+display:block;
+float:left;
+text-indent:-9999px;
+outline:none;
+margin-left:5px;
+width:10px;
+height:11px;
+background:url(/assets/icons/bullets.png) no-repeat;
+}
+
+.sliderBullets .active {
+background-position:0 -11px;
+}
+
+.sliderContent a {
+outline:none;
+}
+
+a {
+color: #999999;
+}
+
+a img {
+border:none;
+}
+/* Ends */
+
+/**
+ * Name: Nice Menu
+ * Version: 0.2
+ * Author: Marcell Jusztin - http://www.marcelljusztin.com
+ * Description: A simple, elegant, colorful, CSS3 animated menu
+ * Tags: css3, animation, menu, simple, elegant, colourful
+ * License: http://creativecommons.org/licenses/by-sa/3.0/
+ *
+ * Changelog v0.2:
+ * - Changed animation to support percentage, so there is no need to update values one-by-one
+ *
+ *
+**/
+
+ul.nice-menu {
+  list-style: none;
+  margin-top: 30px;
+  width: 200px; /* Set the size here */
+  overflow: hidden;
+}
+
+@-moz-keyframes expand {
+  0% {
+    width: 5%;
+    padding-left: 0px;
+  }
+
+  100% {
+    width: 100%;
+    padding-left: 20px;
+  }
+}
+
+@-moz-keyframes expand-bounce {
+  0% {
+    width: 5%;
+    padding-left: 0px;
+  }
+
+  50% {
+    width: 100%;
+  }
+
+  70% {
+    width: 85%;
+  }
+
+  80% {
+    width: 100%;
+  }
+
+  90% {
+    width: 95%;
+  }
+
+  100% {
+    width: 100%;
+    padding-left: 20px;
+  }
+}
+
+@-webkit-keyframes expand {
+  0% {
+    width: 5%;
+    padding-left: 0px;
+  }
+
+  100% {
+    width: 100%;
+    padding-left: 20px;
+  }
+}
+
+@-webkit-keyframes expand-bounce {
+  0% {
+    width: 5%;
+    padding-left: 0px;
+  }
+
+  50% {
+    width: 100%;
+  }
+
+  70% {
+    width: 85%;
+  }
+
+  80% {
+    width: 100%;
+  }
+
+  90% {
+    width: 95%;
+  }
+
+  100% {
+    width: 100%;
+    padding-left: 20px;
+  }
+}
+
+@-moz-keyframes shrink {
+
+  0% {
+    width: 100%;
+    padding-left: 20px;
+  }
+
+  100% {
+    width: 5%;
+    padding-left: 0px;
+  }
+}
+
+@-moz-keyframes shrink-bounce {
+
+  0% {
+    width: 100%;
+    padding-left: 20px;
+  }
+
+  50% {
+    width: 5%;
+  }
+
+  70% {
+    width: 20%;
+  }
+
+  80% {
+    width: 5%;
+  }
+
+  90% {
+    width: 10%;
+  }
+
+  100% {
+    width: 5%;
+    padding-left: 0px;
+  }
+}
+
+@-webkit-keyframes shrink {
+
+  0% {
+    width: 100%;
+    padding-left: 20px;
+  }
+
+  100% {
+    width: 5%;
+    padding-left: 0px;
+  }
+}
+
+@-webkit-keyframes shrink-bounce {
+
+  0% {
+    width: 100%;
+    padding-left: 20px;
+  }
+
+  50% {
+    width: 5%;
+  }
+
+  70% {
+    width: 20%;
+  }
+
+  80% {
+    width: 5%;
+  }
+
+  90% {
+    width: 10%;
+  }
+
+  100% {
+    width: 5%;
+    padding-left: 0px;
+  }
+}
+
+ul.nice-menu li {
+  height: 30px;
+  line-height: 20px;
+  padding: 0px 0px 0px 0px;
+  margin-top: 3px;
+  background: transparent;
+  width: 5%;
+}
+
+ul.nice-menu.tight li {
+  margin-top: 0 !important;
+}
+
+ul.nice-menu li {
+  -moz-animation-name: shrink;
+  -moz-animation-duration: 0.5s;
+  -moz-animation-timing-function: ease-in-out;
+  -webkit-animation-name: shrink;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+ul.nice-menu.bounce li {
+  -moz-animation-name: shrink-bounce;
+  -moz-animation-duration: 0.5s;
+  -moz-animation-timing-function: ease-in-out;
+  -webkit-animation-name: shrink-bounce;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+ul.nice-menu li:hover {
+  width: 100%;
+  padding-left: 20px;
+  -moz-animation-name: expand;
+  -moz-animation-duration: 0.5s;
+  -moz-animation-timing-function: ease-in-out;
+  -webkit-animation-name: expand;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+ul.nice-menu.bounce li:hover {
+  -moz-animation-name: expand-bounce;
+  -moz-animation-duration: 0.5s;
+  -moz-animation-timing-function: ease-in-out;
+  -webkit-animation-name: expand-bounce;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+ul.nice-menu a {
+  width: 100%;
+  text-decoration: none;
+  font-size: 14px;
+  color: #FFF;
+  text-shadow: 0px 0px 3px #333;
+  font-weight: bold;
+  position: absolute;
+  padding: 5px 0px;
+  padding-left: 20px;
+}
+
+ul.nice-menu li.green {
+  background: rgb(107,186,112);
+}
+
+ul.nice-menu li.blue {
+  background: rgb(78,92,127);
+}
+
+ul.nice-menu li.orange {
+  background: rgb(216,121,40);
+}
+
+ul.nice-menu li.dark {
+  background: rgb(42,32,30);
+}
+
+ul.nice-menu li.red {
+  background: rgb(178,59,30);
+}
+
+ul.nice-menu li.bright {
+  background: rgb(241,249,210);
+}	
